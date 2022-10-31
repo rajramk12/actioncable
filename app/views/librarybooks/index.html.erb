@@ -1,0 +1,7 @@
+<% @books.each do |book| %>
+  <div data-controller='book-status' data-book-status-bookid='<%= book.id %>'>
+    <div data-book-status-target='bookstatus'>
+      <%= render partial:"onebook", locals: {book: book} %>
+    </div>
+  </div>  
+<% end %>
